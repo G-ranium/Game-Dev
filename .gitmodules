@@ -1,6 +1,3 @@
-[submodule "scripts"]
-	path = scripts
-	url = https://github.com/G-ranium/Game-Dev
-[submodule "Tools"]
-	path = Tools
-	url = https://github.com/G-ranium/Tools
+[submodule "Code/Scripts"]
+	path = Code/Scripts
+	url = https://github.com/G-ranium/MainGame
