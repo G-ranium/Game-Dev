@@ -12,3 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57b334bfe98399048855dea6d01534ab, type: 3}
   m_Name: Inventory
   m_EditorClassIdentifier: 
+  invKeys:
+  - PowerUps
+  - PowerDowns
+  - Enemys Killed
+  invValues: 0c0000000e00000017000000

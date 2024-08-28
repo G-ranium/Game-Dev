@@ -12,7 +12,7 @@ public class TriggerBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        triggerEnterEvent.Invoke();
-        Debug.Log("Player received a PowerUp");
+        triggerEnterEvent.Invoke(); // Use Unity to make events happen rather than hard code here
+        //Debug.Log("Player received a PowerUp");
     }
 }
