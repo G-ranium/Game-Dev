@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,10 +6,20 @@ using UnityEngine;
 [CreateAssetMenu]
 public class DictData : ScriptableObject
 {
-    List<string> inventory = new List<string>();
+    public List<string> invKeys;
+    public List<int> invValues;
+    
+    private Dictionary<string, int> inventory;
 
-    public void UpdateValue(string item)
+    public void UpdateValue()
     {
-        inventory.Add(item);
+        invKeys.Add("Powerdowns");
+        invValues.Add(1);
+    }
+
+    public void ViewInventory()
+    {
+        Debug.Log(invKeys);
+        Debug.Log(invValues);
     }
 }
