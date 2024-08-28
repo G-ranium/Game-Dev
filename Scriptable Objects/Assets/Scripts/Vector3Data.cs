@@ -5,10 +5,10 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Vector3Data : ScriptableObject
 {
-    public Vector3 value;
+    public Vector3 SpawnLocation;
 
-    public void UpdateValue(Vector3 moveSpeed)
+    public void UpdateLocation(Vector3 coords)
     {
-        value += moveSpeed;
+        SpawnLocation = coords;
     }
 }

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 291dd6115a8990e42b8128e751047fd8, type: 3}
-  m_Name: Move Speed
+  m_Name: Spawnpoint
   m_EditorClassIdentifier: 
   value: {x: 0, y: 0, z: 0}
