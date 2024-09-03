@@ -18,6 +18,7 @@ public class TextLabelBehavior : MonoBehaviour
 
     public void UpdateLabel()
     {
+        label = GetComponent<Text>();
         label.text = labelName + " " + dataObj.value.ToString(CultureInfo.InvariantCulture);
     }
     
