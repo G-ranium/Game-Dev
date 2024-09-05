@@ -5,14 +5,16 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Vector3Data : ScriptableObject
 {
-    public Vector3 spawnPos;
+    public Vector3 mousePos;
 
-    public void SetSpawn(float x)
+    public void GetMousePos(Camera camera)
     {
-        spawnPos = new Vector3(x,0,0);
+        
+        mousePos = Input.mousePosition;
+        mousePos = camera.ScreenToWorldPoint (mousePos);
+        //this line is to prevent z from being changed, can be removed in 3d game
+        mousePos = new Vector3(mousePos.x, mousePos.y, 0);
+
     }
-    public void UpdateLocation(Vector3 coords)
-    {
-        spawnPos = coords;
-    }
+    
 }
