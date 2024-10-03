@@ -4,3 +4,6 @@
 [submodule "Tools"]
 	path = Tools
 	url = https://github.com/G-ranium/Tools
+[submodule "Platformer/Assets/tools"]
+	path = Platformer/Assets/tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools
