@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Globalization;
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,7 +5,8 @@ using UnityEngine.Events;
 public class HealthBehavior : MonoBehaviour
 {
     public Image healthbar;
-    public UnityEvent startEvent;
+    public FloatData health;
+    public UnityEvent startEvent, gameOverEvent;
 
     private void Start()
     {
@@ -18,6 +16,10 @@ public class HealthBehavior : MonoBehaviour
     public void UpdateLabel(FloatData obj)
     {
         healthbar.fillAmount = obj.value;
+        if (health.value <= 0)
+        {
+            gameOverEvent.Invoke();
+        }
     }
 
     public void UpdateLabel(IntData obj)
