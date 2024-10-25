@@ -25,4 +25,9 @@ public class TMPBehavior : MonoBehaviour
     {
         _label.text = obj.value.ToString((CultureInfo.InvariantCulture));
     }
+
+    public void UpdateLabel(Attributes high)
+    {
+        _label.text = high.highScore.ToString((CultureInfo.InvariantCulture));
+    }
 }

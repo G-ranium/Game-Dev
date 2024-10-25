@@ -2,14 +2,12 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
-    public Vector3Data checkpointPos;
-    public Vector3Data spawn;
-    public void ResetToStart()
+    public void TeleportToPosition(Transform obj)
     {
-        transform.position = spawn.value;
+        transform.position = obj.position;
     }
-    public void ResetToCheckpoint()
+    public void TeleportToSavedPosition(Attributes playerCheckpoint)
     {
-        transform.position = checkpointPos.value;
+        transform.position = playerCheckpoint.savedPosition;
     }
 }
