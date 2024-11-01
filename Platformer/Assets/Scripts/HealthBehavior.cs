@@ -22,6 +22,14 @@ public class HealthBehavior : MonoBehaviour
         }
     }
 
+    public void Checkhealth()
+    {
+        if (health.value <= 0)
+        {
+            gameOverEvent.Invoke();
+        }
+    }
+
     public void UpdateLabel(IntData obj)
     {
         healthbar.fillAmount = obj.value;

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Health
   m_EditorClassIdentifier: 
   value: 1
-  minValue: 0
+  minValue: -0.25
   maxValue: 1
   valueOutOfRange:
     m_PersistentCalls:
