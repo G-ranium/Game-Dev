@@ -17,7 +17,6 @@ def create_groups(obj):
     cmds.xform(ctrl_name, worldSpace=True, translation=obj_loc["translation"], rotation=obj_loc["rotation"])
     cmds.xform(grp_name, worldSpace=True, translation=obj_loc["translation"], rotation=obj_loc["rotation"])
 
-    cmds.parent(obj, ctrl_name)
     cmds.parent(ctrl_name, grp_name)
 
 
