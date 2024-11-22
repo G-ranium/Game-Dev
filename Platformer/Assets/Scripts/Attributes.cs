@@ -10,6 +10,7 @@ public class Attributes : ScriptableObject
     public float moveSpeed = 5f;
     public float jumpForce = 2.5f;
     public float gravity = -9.81f;
+    public int maxJumps = 2;
 
     public void CompareScore(IntData score)
     {
@@ -42,6 +43,11 @@ public class Attributes : ScriptableObject
     public void SetMoveSpeed(float moveSpeedValue)
     {
         moveSpeed = moveSpeedValue;
+    }
+
+    public void SetMaxJumps(int maxJumpsValue)
+    {
+        maxJumps = maxJumpsValue;
     }
 
     public void ResetMovementToDefault()
