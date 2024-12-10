@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: All_Anims.ma
-//Last modified: Mon, Dec 09, 2024 04:10:32 PM
+//Last modified: Mon, Dec 09, 2024 08:26:16 PM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Bony_v1_0_5" -rfn "Ultimate_Bony_v1_0_5RN" -op "v=0;"
 		 -typ "mayaAscii" "D:/GitHub Repository/Animation/Animations/Ultimate_Bony_v1.0.5.ma";
@@ -10,13 +10,14 @@ requires maya "2024";
 requires -nodeType "mayaUsdLayerManager" -dataType "pxrUsdStageData" "mayaUsdPlugin" "0.25.0";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "97E18313-4989-6D2C-779D-24AAFA37B449";
+fileInfo "UUID" "83990513-4FDC-E741-D22E-A38BE8399CC2";
 createNode transform -s -n "persp";
 	rename -uid "2158BFD4-4CC2-0C4D-F302-F4B84EC02336";
 	setAttr ".v" no;
@@ -110,11 +111,11 @@ createNode blinn -n "char_body_blinn5";
 	setAttr ".rfl" 0;
 	setAttr ".sro" 0.38211381435394287;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "3A3D0011-4B22-39B3-3778-C39D41224B11";
+	rename -uid "34EE4A82-4202-449B-236A-C6AB3953D57C";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "A04B7306-4B8A-76EF-ED18-9ABD04DA1367";
+	rename -uid "F0F59449-409A-F7A3-90A1-6AB84165F547";
 	setAttr ".cdl" 4;
 	setAttr -s 8 ".dli[1:7]"  8 4 1 2 5 6 7;
 	setAttr -s 5 ".dli";
@@ -122,7 +123,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "000FE639-4E3F-2EB9-F0C1-BCABAC54312E";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A33A2741-4210-F079-9F7B-69AE3EA734C1";
+	rename -uid "0211393B-40D2-0C54-8B76-49812B9C0D02";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "1C225E99-4DDD-D428-D370-5FA5CCD0D1D8";
 	setAttr ".g" yes;
@@ -537,10 +538,10 @@ createNode displayLayer -n "Bony_Arms";
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 4;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "C8B83A0D-46F4-2280-4DDD-3DACCDA69273";
+	rename -uid "5C796926-4861-2061-775D-95B1BDAD65F4";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "BD5E8584-4466-EB32-6381-2FA70FE7C0CE";
+	rename -uid "3468FD96-4608-1960-056F-6E8585227482";
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "9BD3981C-43CE-45CA-E150-52AC94FC80D6";
 	setAttr ".version" -type "string" "5.3.5.2";
@@ -26176,15 +26177,15 @@ createNode animCurveTU -n "Bony_rThumbJ1C_scaleZ";
 		 441 1 442 1 443 1 444 1 445 1 446 1 447 1 448 1 449 1 450 1 451 1 452 1 453 1 454 1
 		 455 1;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "5F06B9A0-4535-1B38-D47C-A2B8D92D55F5";
+	rename -uid "D66D0D83-4BBB-AF22-7787-07B0901B6743";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr ".o" 276;
-	setAttr ".unw" 276;
+	setAttr ".o" 455;
+	setAttr ".unw" 455;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".vac" 2;
 	setAttr ".etmr" no;
